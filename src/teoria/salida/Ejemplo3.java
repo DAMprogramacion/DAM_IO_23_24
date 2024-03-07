@@ -6,9 +6,9 @@ public class Ejemplo3 {
     public static void main(String[] args) {
         String mensaje = "mensaje a escribir \ten un fichero\nOtra línea";
         byte[] bytesMensaje = mensaje.getBytes();
-        File inFile = new File("ficheros/salida/ejemplo3.txt");
+        File outFile = new File("ficheros/salida/ejemplo3.txt");
         try (BufferedOutputStream outputStream = new BufferedOutputStream(
-                new FileOutputStream(inFile))) {
+                new FileOutputStream(outFile))) {
             outputStream.write(bytesMensaje);
             outputStream.flush();
         } catch (FileNotFoundException e) {
@@ -17,6 +17,6 @@ public class Ejemplo3 {
             System.err.println("Error I/O");;
         }
         System.out.printf("Escrito el fichero: %s, %d bytes%n",
-                inFile, inFile.length());
+                outFile, outFile.length());
     }
 }

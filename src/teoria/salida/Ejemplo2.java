@@ -8,8 +8,8 @@ import java.io.IOException;
 public class Ejemplo2 {
     public static void main(String[] args) {
         String mensaje = "mensaje a escribir en un fichero\nOtra línea";
-        File inFile = new File("ficheros/salida/ejemplo2.txt");
-        try (FileOutputStream outputStream = new FileOutputStream(inFile)) {
+        File outFile = new File("ficheros/salida/ejemplo2.txt");
+        try (FileOutputStream outputStream = new FileOutputStream(outFile)) {
             outputStream.write(mensaje.getBytes());
             outputStream.flush();
         } catch (FileNotFoundException e) {
@@ -18,6 +18,6 @@ public class Ejemplo2 {
             System.err.println("Error I/O");;
         }
         System.out.printf("Escrito el fichero: %s, %d bytes%n",
-                inFile, inFile.length());
+                outFile, outFile.length());
     }
 }
