@@ -12,10 +12,10 @@ public class Ejemplo1 {
             bytes = inputStream.read();
             System.out.println((char) bytes);*/
             int bytes = inputStream.read();
-            System.out.println((char) bytes);
+           // System.out.println((char) bytes);
             while (bytes != -1){
-                bytes = inputStream.read();
                 System.out.println((char) bytes);
+                bytes = inputStream.read();
             }
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
