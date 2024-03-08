@@ -1,4 +1,4 @@
-package teoria.salida;
+package teoria.salida.bytes;
 
 import java.io.*;
 

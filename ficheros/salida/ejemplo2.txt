@@ -1,2 +1,3 @@
-mensaje a escribir en un fichero
+mensaje a escribir   en un fichero
+
 Otra línea

@@ -1,4 +1,4 @@
-package teoria.entrada;
+package teoria.entrada.bytes;
 
 import java.io.*;
 
