@@ -1,0 +1,5 @@
+NOMBRE: juan, EDAD: 23
+NOMBRE: alberto, EDAD: 45
+NOMBRE: santiago, EDAD: 21
+NOMBRE: luisa, EDAD: 19
+NOMBRE: esther, EDAD: 51
