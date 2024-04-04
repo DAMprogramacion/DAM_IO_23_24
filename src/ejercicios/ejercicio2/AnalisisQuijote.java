@@ -38,7 +38,7 @@ public class AnalisisQuijote {
                         contadorRucio++;
                     if (palabra.toLowerCase().contains("rocinante")) //contamos si la palabra está acompañada con una coma, punto, etc
                         contadorRocinante++;
-                    if (palabra.toLowerCase().contains("firebrás")) //contamos si la palabra está acompañada con una coma, punto, etc
+                    if (palabra.toLowerCase().contains("fierabrás")) //contamos si la palabra está acompañada con una coma, punto, etc
                         contadorFierabras++;
                     if (palabra.toLowerCase().contains("barataria")) //contamos si la palabra está acompañada con una coma, punto, etc
                         contadorBarataria++;
@@ -51,6 +51,29 @@ public class AnalisisQuijote {
         }
         //System.out.println(contadorQuijote);
         //MOSTRAMOS EL INFORME, USAMOS UN STRINGBUILDER
+        StringBuilder builder = new StringBuilder("Quijote protagonista de la novela, aparece ");
+        builder.append(contadorQuijote).append(" veces.\n");
+        builder.append("Sancho el fiel escudero, aparece ").append(contadorSancho)
+                .append(" veces.\n");
+        builder.append("Cardenio personaje al que Don Quijote y Sancho Panza se encontraron cuando iban por un bosque de Sierra Morena. Aparece ")
+                .append(contadorCardenio).append(" veces.\n");
+        builder.append("Dulcinea la dama de quien está enamorado el protagonista Don Qujote en la novela, aparece ")
+                .append(contadorDulcinea).append(" veces mencionada.\n");
+        builder.append("Rucio el burro de Sancho Panza, aparece ").append(contadorRucio)
+                .append(" veces mencionado.\n");
+        builder.append("Rocinante el caballo de Don Quijote, mencionado ").append(contadorRocinante)
+                .append(" .\n");
+        builder.append("Fierabrás según Don Quijote, poción mágica capaz de curar todas las dolencias del cuerpo humano, mencionado ")
+                .append(contadorFierabras).append(" veces.\n");
+        builder.append("Barataria ı́nsula de quien fue gobernador Sancho Panza. ")
+                .append(contadorBarataria).append(" apariciones.\n");
+        builder.append("Hamete supuesto historiador musulmán, ").append(contadorHamete)
+                .append(" apariciones.");
+        System.out.println(builder);
+
+
+
+
 
     }
 }
